@@ -1,4 +1,5 @@
 import 'package:e_commerce_app_self/features/authentication/screens/onboarding/widgets/onboarding_dot_navigation.dart';
+import 'package:e_commerce_app_self/features/authentication/screens/onboarding/widgets/onboarding_next_button.dart';
 import 'package:e_commerce_app_self/features/authentication/screens/onboarding/widgets/onboarding_widget.dart';
 import 'package:e_commerce_app_self/features/authentication/screens/onboarding/widgets/onboarding_skip_widget.dart';
 import 'package:e_commerce_app_self/utils/constants/app_constants.dart';
@@ -44,9 +45,10 @@ class OnboardingScreen extends StatelessWidget {
 
           // dot navigation smoothPageIdicator
           // TODO: manage this with riverpod
-          OnboardingDotNavigation(pageViewController: pageViewController),
+          OnboardingDotNavigation(),
 
           // circularButton
+          OnboardingNextButton(),
         ],
       ),
     );
