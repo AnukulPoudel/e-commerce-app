@@ -13,5 +13,6 @@ class ATheme {
     useMaterial3: true,
     brightness: Brightness.dark,
     scaffoldBackgroundColor: Colors.black,
+    textTheme: ATextTheme.darkTextTheme,
   );
 }
