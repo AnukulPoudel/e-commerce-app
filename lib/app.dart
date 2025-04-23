@@ -1,4 +1,5 @@
 import 'package:e_commerce_app_self/features/authentication/screens/onboarding.dart';
+import 'package:e_commerce_app_self/utils/themes/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 
@@ -10,8 +11,8 @@ class App extends StatelessWidget {
     FlutterNativeSplash.remove();
     return MaterialApp(
       themeMode: ThemeMode.system,
-      theme: ThemeData(),
-      darkTheme: ThemeData(),
+      theme: ATheme.lightTheme,
+      darkTheme: ATheme.darkTheme,
       home: const OnboardingScreen(),
     );
   }

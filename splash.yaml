@@ -6,7 +6,7 @@ flutter_native_splash:
   
   # dark mode
   color_dark: "#272727"
-  background_image_dark: "assets/logos/t-store-splash-logo-white.png"
+  image_dark: "assets/logos/t-store-splash-logo-white.png"
 
   # for android 12 and after
   android_12:
@@ -16,6 +16,6 @@ flutter_native_splash:
 
     # dark mode
     color_dark: "#272727"
-    background_image_dark: "assets/logos/t-store-splash-logo-white.png"
+    image_dark: "assets/logos/t-store-splash-logo-white.png"
   
   web: false
