@@ -3,4 +3,5 @@ class ASize {
 
   static const spaceBtwnItems = 16.0;
   static const defaultSpace = 26.0;
+
 }

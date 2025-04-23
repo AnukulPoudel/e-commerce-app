@@ -50,4 +50,4 @@ app.*.map.json
 /android/app/release
 
 # Secret file
-/lib/utils/constants/api_constants.dart
+lib/utils/constants/app_constants/api_strings.dart

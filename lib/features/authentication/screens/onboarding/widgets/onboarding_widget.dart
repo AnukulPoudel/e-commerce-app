@@ -1,49 +1,7 @@
-import 'package:e_commerce_app_self/utils/constants/app_constants.dart';
+
+import 'package:e_commerce_app_self/utils/constants/app_constants/size.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
-
-class OnboardingScreen extends StatelessWidget {
-  const OnboardingScreen({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    final device = MediaQuery.of(context).size;
-    return SafeArea(
-      child: Scaffold(
-        body: Stack(
-          children: [
-            // horizontal scrollable page
-            PageView(
-              children: [
-                OnBoardingWidget(
-                  device: device,
-                  onBoardingHeadingText: ATextString.onBoardingHeadingText1,
-                  onBoardingText: ATextString.onBoardingText1,
-                  lottieOnboardingString: ALottie.onboarding1,
-                ),
-                OnBoardingWidget(
-                  device: device,
-                  onBoardingHeadingText: ATextString.onBoardingHeadingText2,
-                  onBoardingText: ATextString.onBoardingText2,
-                  lottieOnboardingString: ALottie.onboarding2,
-                ),
-                OnBoardingWidget(
-                  device: device,
-                  onBoardingHeadingText: ATextString.onBoardingHeadingText3,
-                  onBoardingText: ATextString.onBoardingText3,
-                  lottieOnboardingString: ALottie.onboarding3,
-                ),
-              ],
-            ),
-            // skip button
-            // dot navigation smoothPageIdicator
-            // circularButton
-          ],
-        ),
-      ),
-    );
-  }
-}
 
 class OnBoardingWidget extends StatelessWidget {
   const OnBoardingWidget({
@@ -67,6 +25,7 @@ class OnBoardingWidget extends StatelessWidget {
         children: [
           // image
           LottieBuilder.asset(
+            renderCache: RenderCache.raster,
             lottieOnboardingString,
             // inefficient and redundant call on mediaquety not good
             // width: ADeviceUtility.getDeviceWidth(context) * 0.8,
